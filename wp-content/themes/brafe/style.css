@@ -1,0 +1,516 @@
+/*
+Theme Name: Brafé
+Theme URI:www.brafe.com
+Author: In Junior
+Author URI: www.injunior.com
+Description: Esse tema foi um teste
+Version: 1.0
+*/
+
+:root{
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 8.6em;
+    transition: .1s;
+}
+
+h3 {
+    font-size: 1em;
+    transition: .1s;
+}
+
+h5 {
+    font-size: .5em;
+    transition: .1s;
+}
+
+p {
+    transition: .1s;
+}
+
+figcaption {
+    min-height: 20px;
+    height: 3vw;
+    color: white;
+
+    position: relative;
+    width: 45%;
+    bottom: 10%;
+    
+    background-color: rgb(31, 30, 30);
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;  
+}
+
+header nav img{
+    height: 60%;
+}
+
+header li{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 900;
+}
+
+header nav ul li:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: .6s;
+}
+
+header nav ul li:hover:after {
+    width: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none; 
+}
+
+button {
+    margin: 10% 0;
+    background-color: #fff0;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    width: 175px;
+    height: 50px;
+    transition: .5s;
+    border: 3px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* Section 1*/
+
+#sec1{
+    width: 100%;
+
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-image: url(img/bg-intro.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#text1 {
+    padding: 10% 20%;
+    width: 40%;
+}
+
+#text1 h3:after {
+    display: block;
+    content: "";
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    margin: 10px auto;
+}
+
+#text1 h5 {
+    margin: 10px 20px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 25px;
+}
+
+/* Section 2 */
+
+#sec2{
+    background-color: white;
+    
+    
+    display: flex;
+    justify-content: center;
+}
+
+#text2{
+    width: 50%;
+    padding: 5%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+#text2 h3{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#figures2{
+    margin: 10%;
+
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+}
+
+#figures2 img {
+    margin: 5px;
+    width: 30vw;
+}
+
+#ptext2{
+    font-size: 1,6em;
+    font-style: italic;
+    font-weight: bolder;
+    width: 80%;
+}
+
+/* Section 3*/
+
+#sec3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 5px solid rgb(214, 211, 200);
+    border-bottom: 5px solid rgb(214, 211, 200);
+}
+
+#sec3 button {
+    margin: 0px auto 5%;
+}
+
+#produtos{
+    background-color: rgb(231, 228, 216);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+    
+.type{
+    padding: 2% 0;
+    width: 30vw;
+
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.type p{
+    margin: 10%;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.typec:before {
+    content: '';
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px;
+    border: 5px solid rgb(231, 228, 216);
+    margin: 10px auto 40px;
+    animation: pscodelico 2s infinite;
+}
+
+@keyframes pscodelico{
+   0% {box-shadow: 0 0 0 5px; width:80px;}
+   50% {box-shadow: 0 0 0 10px; width:40px;}
+   100% {box-shadow: 0 0 0 5px; widows: 80px;}
+}
+
+#sp:before {
+    color: rgb(73,41,1);
+    background-color: rgb(73,41,1);
+}
+
+#rj:before {
+    background-color: rgb(193, 113, 57);
+    color: rgb(193, 113, 57);
+}
+
+#mg:before {
+    background-color: rgb(215, 165, 77);
+    color: rgb(215, 165, 77);
+}
+
+/* Section 4*/
+
+#sec4{
+    width: 100%;
+    margin: 50px 0;
+}
+.franquia{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.franquiatxt{
+    padding: 2%;
+    word-wrap: break-word;
+    width: 30%;
+}
+
+.franquiatxt h3 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.franquiatxt p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Section 5*/
+
+#sec5{
+    width: 100%;
+}
+
+#contato{
+    background-color: rgb(231, 228, 216);
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+
+#contatotxt{
+    margin-right: 10px;
+}
+
+#contatotxt h3{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#contatotxt h5{
+    font-size: 1.5em;
+}
+
+#contatoform{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#contatoform input{
+    height: 50%;
+    border: 2px solid black;
+    
+}
+
+#contatoform button {
+    border: none;
+    margin: 0 0;
+    height: 60%;
+    background-color: black;
+    color: white;
+}
+
+/* footer */
+
+#fot {
+    background-color: rgb(214,211,200);
+    padding: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+#fot img {
+    height: 40px;
+    width: 120px;
+}
+
+/* Reativizando */
+
+@media screen and (max-width: 900px){
+
+    :root {
+        font-size: 60%;
+    }
+
+    button {
+        font-size: 15px;
+        height: 40px;
+        width: 120px;
+    }
+
+    figcaption {
+        position: relative;
+        width: 60%;
+        bottom: 10%;
+        left: 20%;
+    }
+
+
+    header {
+        height: 95px;
+        top: 0;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    header img {
+        height: 10%;
+        width: 30%;
+    }
+
+    header nav ul {
+        margin: 10px auto 0;
+        font-size: 2em;
+        width: 100%;
+    }
+
+    #sec1{
+        margin-top: 80px;
+    }
+
+    #text1 h3 {
+        
+        font-size: .8em;
+    }
+
+    #figures2 {
+        flex-direction: column;
+    }
+
+    #ptext2 {
+        font-size: 2em;
+    }
+
+    #produtos {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .type {
+        width: 60vw;
+    }
+
+    .franquia {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        
+    }
+
+    .franquiatxt {
+        width: 50%;
+    }
+
+    .franquiatxt p {
+        margin: 5% 0;
+        font-size: 15px;
+    }
+
+    .franquia img {
+        height: 50%;
+        width: 50%;
+    }
+
+    #contato {
+        font-size: .5em;
+        flex-direction: column;
+    }
+
+    #contatotxt {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 10px;
+    }
+
+    #contatoform {
+        margin-top: 20px;
+        padding-right: 55px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    #contatoform input {
+        border: 2px solid;
+    }
+
+    #contatofrom button {
+        height: 17px;
+        width: 50px;
+    }
+
+    #fot {
+        padding: 10%;
+        width: 100%;
+        flex-direction: column;
+        height: 130px;
+        font-size: 2em;
+        margin: 0 auto;        
+    }
+
+    #fot p{
+        width: 90%;
+    }
+
+    #fot img{
+        margin: 0 auto;
+    }
+}
